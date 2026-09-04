@@ -28,7 +28,7 @@ async function getWeatherData()
 
         const cityName=geoData.results[0].name;
         
-        const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,wind_speed_10m,relative_humidity_2m,surface_pressure,weather_code&daily=temperature_2m_max,temperature_2m_min,weather_code&forecast_days=5`;
+        const url =`https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,wind_speed_10m,relative_humidity_2m,surface_pressure,weather_code&daily=temperature_2m_max,temperature_2m_min,weather_code&forecast_days=5&timezone=auto`;
         const response = await fetch(url);
 
         if(!response.ok)
