@@ -39,13 +39,6 @@ Weather-App/
 ├── style.css
 └── index.js
 
-## How to Run
-
-1. Clone the repository.
-2. Open the project folder.
-3. Open `index.html` in your browser.
-4. Enter a city name.
-5. Click **Show Weather**.
 
 ## Author
 
